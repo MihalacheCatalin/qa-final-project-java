@@ -1,0 +1,10 @@
+TEST: Verificare Endpoint TODO
+    SET URL = "https://jsonplaceholder.typicode.com/todos/1"
+    
+    TRIMITE request GET către URL
+    SALVEAZĂ răspunsul în variabila 'response'
+    
+    VERIFICĂ dacă response.statusCode ESTE EGAL CU 200
+    VERIFICĂ dacă response.body CONȚINE câmpul "title"
+    VERIFICĂ dacă response.body.title NU ESTE GOL
+SFÂRȘIT TEST
